@@ -1,6 +1,6 @@
 onload = function(){
   
-  var c = document.getElementbyId('canvas');
+  var c = document.getElementById('canvas');
   c.width = 500;
   c.height = 300;
   
