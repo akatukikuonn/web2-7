@@ -63,7 +63,7 @@ onload = function(){
   m.multiply(pMatrix, vMatrix, vpMatrix);
   
   
-  var cont = 0;
+  var count = 0;
   
   
   (function(){
@@ -73,7 +73,7 @@ onload = function(){
    gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
   
   //かうんた(75)
-  var rad =(count% 360) * Math.PI / 180;
+  var rad =(count % 360) * Math.PI / 180;
   
   
   m.identity(wMatrix);
