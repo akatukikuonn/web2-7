@@ -128,7 +128,7 @@ onload = function(){
       return shader;
     }else{
       
-      alert(gl.getShaderInFoLog(shader));
+      alert(gl.getShaderInfoLog(shader));
     }
   }
   
