@@ -89,7 +89,7 @@ onload = function(){
   gl.flush();
                         
                         
-  conut++;
+  count++;
    
                         
    setTimeout(arguments.callee, 1000/ 30);
