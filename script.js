@@ -58,7 +58,7 @@ onload = function(){
   var wvMatrix = m.identity(m.create());
   
   
-  m.lookAT([0.0,0.0,5.0],[0,0,0],[0,1,0],vMatrix);
+  m.lookAt([0.0,0.0,5.0],[0,0,0],[0,1,0],vMatrix);
   m,perspective(45, c.width / c.height, 0.1, 100, pMatrix);
   m.multiply(pMatrix, vMatrix, vpMatrix);
   
