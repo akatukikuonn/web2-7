@@ -130,7 +130,7 @@ onload = function(){
       
       alert(gl.getShaderInFoLog(shader));
     }
-  ]
+  }
   
  
   //ぷろぐらむオブジェクトを生成シェーダ(136)
