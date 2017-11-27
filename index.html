@@ -13,9 +13,17 @@
       
       void main(void){
        vColor = color;
-       gl_position = mvpMatrix *
-       
-       
+       gl_position = mvpMatrix * vec4(position,1.0);
+       }
+    </script>
+    <script id="fs" type="x-shader/x-fragment">
+    precision mediump float;
+    varying vec4 vColor;
+    
+    void main(void){
+     gl_FragColor = vColor;
+    }
+    </script>
       </head>
   <body>
     <cavas id="canvas"></canvas>
