@@ -155,3 +155,4 @@ onload = function(){
       alert(gl.getProgramInFoLog(program));
     }
   }
+}
