@@ -44,7 +44,7 @@ onload = function(){
   set_attribute([pos_vbo,col_vbo],attLocation,attStride);
   
   //unformlocation(46)
-  var uniLocation = gl.getUniformlocation(prg,'mvpMatrix');
+  var uniLocation = gl.getUniformLocation(prg,'mvpMatrix');
 
   
   
