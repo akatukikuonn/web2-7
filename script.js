@@ -77,7 +77,7 @@ onload = function(){
   
   
   m.identity(wMatrix);
-  m.translate(wMatrix, {1.0, -1.0, 0.0], wMatrix);
+  m.translate(wMatrix, [1.0, -1.0, 0.0], wMatrix);
   m.rotate(wMatrix, rad, [0, 1, 0], wMatrix);
  
                         
