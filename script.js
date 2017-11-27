@@ -66,7 +66,7 @@ onload = function(){
   var cont = 0;
   
   
-  (dunction(){
+  (function(){
    
    gl.clearColor(0.0,0.0,0.0,1.0);
    gl.clearDepth(1.0);
