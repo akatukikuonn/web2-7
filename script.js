@@ -143,7 +143,7 @@ onload = function(){
     gl.attachShader(program, fs);
     
     
-    gl.limkProgram(program);
+    gl.linkProgram(program);
     
     
     if(gl.getProgramParameter(program,gl.LINK_STATUS)){
