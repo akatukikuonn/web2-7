@@ -82,7 +82,7 @@ onload = function(){
  
                         
  m.multiply(vpMatrix, wMatrix, wvpMatrix);
- gl.uniformMatriix4fv(uniLocation, false, wvpMatrix);
+ gl.uniformMatrix4fv(uniLocation, false, wvpMatrix);
  gl.drawArrays(gl.TRIANGLES, 0, 3);
   
  
