@@ -16,7 +16,7 @@ onload = function(){
   
   var attLocation = new Array(2);
   attLocation[0] = gl.getAttribLocation(prg,'position');
-  attLocation[1] = gl.getattribLocation(prg,'clor');
+  attLocation[1] = gl.getAttribLocation(prg,'color');
   
   
   
