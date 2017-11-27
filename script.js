@@ -135,16 +135,19 @@ onload = function(){
  
   //ぷろぐらむオブジェクトを生成シェーダ(136)
   function create_program(vs,fs){
+    
     var program = gl.createProgram();
     
     
     gl.attachShader(program, vs);
     gl.attachShader(program, fs);
     
+    
     gl.limkProgram(program);
     
     
     if(gl.getProgramParameter(program,gl.LINK_STATUS)){
+      
       gl.useProgram(program);
       return program;
     }else{
