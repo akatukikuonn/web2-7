@@ -155,4 +155,31 @@ onload = function(){
       alert(gl.getProgramInFoLog(program));
     }
   }
+
+ 
+  function create_vbo(data){
+  
+    var vbo = gl.createBuffer();
+   
+    gl.bindBuffer(gl.ARRAY_BUFFER, vbo);
+   
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(data), gl.STATIC_DRAW);
+   
+    gl.bindBuffer(gl.ARRAY_BUFFER, null);
+  
+    return vbo;
+  }
+
+
+  function set_attribute(vbo, attL, attS){
+  
+    for(var i in vbo){
+     
+      gl.bindBuffer(gl.ARRAY_BUFFER, vbo[i]);
+      
+      gl.enableVertexAttribArray(attL[i]);
+      
+      gl.vertexAttribPointer(attL[i], attS[i], gl.FLOAT, false, 0, 0);
+    }
+  }
 };
