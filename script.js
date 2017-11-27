@@ -55,7 +55,7 @@ onload = function(){
   var vMatrix = m.identity(m.create());
   var pMatrix = m.identity(m.create());
   var vpMatrix = m.identity(m.create());
-  var wvMatrix = m.identity(m.create());
+  var wvpMatrix = m.identity(m.create());
   
   
   m.lookAt([0.0,0.0,5.0],[0,0,0],[0,1,0],vMatrix);
